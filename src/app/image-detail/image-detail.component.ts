@@ -33,11 +33,13 @@ export class ImageDetailComponent implements OnInit {
      
     this.rimage=Math.floor(Math.random() * this.visibleImages.length);
     return this.foo=this.visibleImages[this.rimage].url;
+    
   }
 
   public randomName(){
-    let num=4;      
-      for(let i=1; i<=4; i++){
+    let num=3;   
+    this.fourValues=[];   
+      for(let i=0; i<=num; i++){
         this.rname=Math.floor(Math.random() * this.visibleImages.length);        
         this.fourValues.push(this.visibleImages[this.rname].name);
       }
