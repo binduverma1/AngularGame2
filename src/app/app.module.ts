@@ -4,13 +4,10 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ImageDetailComponent } from './image-detail/image-detail.component';
 import { ImageServiceService } from './image-service.service';
-import { MyCustomPipePipe } from './pipes/my-custom-pipe.pipe';
-
 @NgModule({
   declarations: [
     AppComponent,
-    ImageDetailComponent,
-    MyCustomPipePipe
+    ImageDetailComponent
   ],
   imports: [
     BrowserModule,
