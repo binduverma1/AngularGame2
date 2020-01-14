@@ -82,21 +82,13 @@ export class ImageDetailComponent implements OnInit {
      for(let k=0; k< this.fourValues.length; k++){
        this.buttonBackground[k]='rgb(113,157,252)';
      }
-    }   ;    
+    };  
 
-    return this.foo=this.visibleImages[this.rimage].url;
     
-  }
+    
+ 
 
-  public randomName(){
-    let num=3;   
-    this.fourValues=[];   
-      for(let i=0; i<=num; i++){
-        this.rname=Math.floor(Math.random() * this.visibleImages.length);        
-        this.fourValues.push(this.visibleImages[this.rname].name);
-      }
-      return this.fourValues;
-  } 
+ 
 
 
   
