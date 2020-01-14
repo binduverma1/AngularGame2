@@ -41,6 +41,7 @@ export class ImageDetailComponent implements OnInit {
   
   public randomImage(){     
     this.rimage=Math.floor(Math.random() * this.visibleImages.length);
+
     this.imageName =this.visibleImages[this.rimage].name;
     return this.displayPic=this.visibleImages[this.rimage].url;
   }//end of randomImage.
@@ -82,6 +83,21 @@ export class ImageDetailComponent implements OnInit {
        this.buttonBackground[k]='rgb(113,157,252)';
      }
     }   ;    
+
+    return this.foo=this.visibleImages[this.rimage].url;
+    
+  }
+
+  public randomName(){
+    let num=3;   
+    this.fourValues=[];   
+      for(let i=0; i<=num; i++){
+        this.rname=Math.floor(Math.random() * this.visibleImages.length);        
+        this.fourValues.push(this.visibleImages[this.rname].name);
+      }
+      return this.fourValues;
+  } 
+
 
   
 }//end export
