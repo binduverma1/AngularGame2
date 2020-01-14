@@ -1,24 +1,18 @@
 
 <div>
-  <h1>Random Pics</h1>
-</div>
-<div  >
-  <!--
-  <ul>
-    <li *ngFor ='let image of visibleImages'>
-      <img [src]=image.url  />
-        </li>        
-  </ul> -->
-  <img src={{foo}} class="img" />  
-</div>
+  <h1>Random Pics</h1>	  
+</div>	
 <div>
-    
-  </div> 
-  <div>
-    <button (click)=randomImage();randomName()>Shuffle</button>
-    <button>{{fourValues[0]}}</button>
-    <button>{{fourValues[1]}}</button>
-    <button>{{fourValues[2]}}</button>
-    <button>{{fourValues[3]}}</button>
-    
-</div>
+  <img src={{displayPic}} class="img" />  
+</div>	
+<div>	
+  <button (click)=randomImage();randomName();resetButtons();>Shuffle</button>
+ 	<!--button (click)=matchName(this.fourvalues,this.imageName);>{{value}}</button--> 
+  <button id="btn1" [ngStyle]="{'background':buttonBackground[0]}" (click)=matchName(0)>{{fourValues[0]}}</button>    
+  <button id="btn2" [ngStyle]="{'background':buttonBackground[1]}" (click)=matchName(1)>{{fourValues[1]}}</button>
+  <button id="btn3" [ngStyle]="{'background':buttonBackground[2]}" (click)=matchName(2)>{{fourValues[2]}}</button>
+  <button id="btn4" [ngStyle]="{'background':buttonBackground[3]}" (click)=matchName(3)>{{fourValues[3]}}</button>
+
+   
+</div>	
+
